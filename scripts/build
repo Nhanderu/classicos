@@ -1,0 +1,24 @@
+#!/bin/sh
+
+rm -rf build docs
+mkdir -p build docs
+
+pages="${@:-$(ls config | sed s/.json//)}"
+for page in $pages ; do
+
+    # Builds the code.
+    stylus --compress \
+        < src/index.styl \
+        > build/index.css
+    pug --obj config/$page.json \
+        < src/index.pug \
+        > build/$page.html
+
+    # Bundles the files.
+    cat build/$page.html | \
+        inline-source --root build/ > \
+        docs/$page.html
+
+done
+
+rm -rf build
