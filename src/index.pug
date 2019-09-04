@@ -11,13 +11,14 @@ html
         
         link(inline, rel='stylesheet', href='index.css')
 
-        title Derby Paulista!
+        title #{title}
 
     body
 
+        h1 #{title}
+
         table.table-h
             tr
-                th
                 th Mundial
                 th Recopa
                 th Libertadores
@@ -26,7 +27,6 @@ html
                 th Série B
                 th Paulistão
             tr(class=`team-${teams[0]}`)
-                td #{teams[0].toUpperCase()}
                 td 2
                 td 1
                 td 1
@@ -35,7 +35,6 @@ html
                 td 1
                 td 30
             tr(class=`team-${teams[1]}`)
-                td #{teams[1].toUpperCase()}
                 td 0
                 td 0
                 td 1
@@ -45,10 +44,6 @@ html
                 td 22
 
         table.table-v
-                tr
-                    th
-                    th(#ass=`team-${teams[0]}`) #{teams[0].toUpperCase()}
-                    th(class=`team-${teams[1]}`) #{teams[1].toUpperCase()}
                 tr
                     td Mundial
                     td(class=`team-${teams[0]}`) 2
