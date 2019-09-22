@@ -2,6 +2,7 @@
 
 rm -rf build docs
 mkdir -p build docs
+cp src/index.js docs
 
 pages="${@:-$(ls config | sed s/.json//)}"
 for page in $pages ; do
