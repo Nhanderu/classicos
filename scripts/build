@@ -1,12 +1,6 @@
 #!/bin/sh
 
-rm -rf build docs
-mkdir -p build docs
-
-pages="${@:-$(ls config | sed s/.json//)}"
-
 clear >$(tty)
-
 echo ""
 echo "      _               _               "
 echo "     | |             (_)              "
@@ -17,13 +11,13 @@ echo " \___|_|\__,_|___/___/_|\___\___/|___/"
 echo ""
 echo ""
 
-echo "Starting build"
-echo ""
-echo ""
+rm -rf build docs
+mkdir -p build docs
 
+pages="${@:-$(ls config | sed s/.json//)}"
 for page in $pages ; do
 
-		echo "Creating $page page"
+    echo "Building $page."
 
     # Builds the code.
     npx stylus --compress \
@@ -39,7 +33,6 @@ for page in $pages ; do
         docs/$page.html
 
 done
+rm -rf build
 
 echo "Done."
-
-rm -rf build
