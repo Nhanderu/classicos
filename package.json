@@ -1,0 +1,27 @@
+{
+  "name": "classicos",
+  "version": "1.0.0",
+  "description": "* Stop being lazy",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+		"build": "./scripts/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nhanderu/classicos.git"
+  },
+  "author": "Nhanderu",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Nhanderu/classicos/issues"
+  },
+  "homepage": "https://github.com/Nhanderu/classicos#readme",
+  "dependencies": {
+    "inline-source-cli": "^1.2.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.7"
+  }
+}
