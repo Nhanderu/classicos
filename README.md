@@ -2,7 +2,7 @@
 
 ## How to use
 
-It's so simple, lock:
+It's so simple, look:
 
 ```shell
 yarn 
