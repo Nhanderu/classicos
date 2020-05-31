@@ -2,7 +2,7 @@ doctype html
 
 html
 
-    header
+    head
 
         meta(charset='utf-8')
         meta(name='author' content='Rafael Escobar')
@@ -10,9 +10,6 @@ html
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
 
         link(inline, rel='stylesheet', href='index.css')
-
-        script(src="https://unpkg.com/axios/dist/axios.min.js")
-        script(src="./index.js")
 
         title #{title}
 
@@ -75,3 +72,6 @@ html
                     td Paulistão
                     td(class=`team-${teams[0]}`) 30
                     td(class=`team-${teams[1]}`) 22
+
+        script(defer, src="https://unpkg.com/axios/dist/axios.min.js")
+        script(inline, defer, src="./index.js")

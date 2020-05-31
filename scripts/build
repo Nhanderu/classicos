@@ -1,25 +1,15 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-rm -rf build docs
-mkdir -p build docs
-cp src/index.js docs
+rm -rf build
+mkdir -p build
+
+stylus src --compress -o build
+cp src/*.js build
 
 pages="${@:-$(ls config | sed s/.json//)}"
-for page in $pages ; do
-
-    # Builds the code.
-    stylus --compress \
-        < src/index.styl \
-        > build/index.css
-    pug --obj config/$page.json \
-        < src/index.pug \
-        > build/$page.html
-
-    # Bundles the files.
-    cat build/$page.html | \
-        inline-source --root build/ > \
-        docs/$page.html
-
+for page in $pages; do
+    pug -O config/$page.json < src/index.pug > build/$page.html
+    inline-source --compress --root build build/$page.html docs/$page.html
 done
 
 rm -rf build
