@@ -1,6 +1,6 @@
-const hHeadTR = document.querySelector('.table-h > thead > tr')
-const hBody = document.querySelector('.table-h > tbody')
-const vBody = document.querySelector('.table-v > tbody')
+const hHeadTR = document.querySelector('#table-h > thead > tr')
+const hBody = document.querySelector('#table-h > tbody')
+const vBody = document.querySelector('#table-v > tbody')
 
 const teamsSpan = document.querySelector('#teams')
 const team1 = teamsSpan.getAttribute('data-team-1')

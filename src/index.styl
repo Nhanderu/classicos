@@ -1,11 +1,3 @@
-/*
- * Mixins.
- */
-
-full-size()
-    height 100vh
-    width 100vw
-
 @media screen
 
     /*
@@ -17,11 +9,9 @@ full-size()
         margin 0
         padding 0
 
-    html
-        full-size()
-
     body
-        full-size()
+        height 100vh
+        width 100vw
         font-family 'Roboto', sans-serif
 
     table
@@ -103,11 +93,11 @@ full-size()
     @media (orientation: portrait)
 
         .title-wrapper
-            height 10vh
+            height 10%
             font-size 1.5rem
 
-        .table-v
-            height 90vh
+        #table-v
+            height 90%
 
             > tbody
                 display table
@@ -124,7 +114,7 @@ full-size()
                     > td
                         font-size 1.4rem
 
-        .table-h
+        #table-h
             display none
 
     @media (orientation: landscape)
@@ -133,29 +123,29 @@ full-size()
             display table
             table-layout fixed
 
-        .title-wrapper
+        .title-wrapper > .title
             margin 2rem
+            font-size 4rem
 
-            > .title
-                font-size 4rem
-
-        .table-h
+        #table-h
             height 600px
 
-            > thead
-                height 34%
+            tr
+                height 200px
 
-                > tr
-                    height 100%
+            > thead > tr
                     font-size 1.5rem
 
-            > tbody
-                height 66%
-
-                > tr
-                    height 50%
+            > tbody > tr
                     font-size 2rem
 
-        .table-v
+        #table-v
             display none
 
+    /*
+     * Utils.
+     */
+
+    .webkit-mobile-full-height
+        @media (orientation: portrait)
+            height calc(100vh - 56px)
