@@ -3,12 +3,15 @@
 rm -rf build
 mkdir -p build
 
+pug < src/index.pug > build/index.html
 stylus src --compress -o build
 cp src/*.js build
 
+inline-source --compress --root build build/index.html docs/index.html
+
 pages="${@:-$(ls config | sed s/.json//)}"
 for page in $pages; do
-    pug -O config/$page.json < src/index.pug > build/$page.html
+    pug -O config/$page.json < src/page.pug > build/$page.html
     inline-source --compress --root build build/$page.html docs/$page.html
 done
 

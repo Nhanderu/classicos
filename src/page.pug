@@ -1,0 +1,35 @@
+doctype html
+
+html
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='author' content='Rafael Escobar')
+        meta(name='description' content='')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        link(inline, rel='stylesheet', href='page.css')
+        link(inline, rel='stylesheet', href='util.css')
+
+        title #{title}
+
+    body
+
+        header
+            h1 #{title}
+
+        main
+            table#table-h
+                thead: tr
+                tbody
+            table#table-v
+                tbody
+
+        script(inline, defer, src="chrome-mobile.js")
+
+        span#teams(data-team-1=team1, data-team-2=team2)
+        //- script(defer, src="https://unpkg.com/axios/dist/axios.min.js")
+        //- script(inline, defer, src="fetch.js")
+        script(inline, defer, src="tempdata.js")
+        script(inline, defer, src="display.js")

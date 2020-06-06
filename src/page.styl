@@ -1,0 +1,145 @@
+@media screen
+
+    /*
+     * Common.
+     */
+
+    *
+        box-sizing border-box
+        margin 0
+        padding 0
+
+    body
+        height 100vh
+        width 100vw
+        font-family 'Roboto', sans-serif
+
+    table
+        border-spacing 0
+
+    tr
+        width 100vw
+
+    td, th
+        text-align center
+
+    /*
+     * Main.
+     */
+
+    header
+        display flex
+        align-items center
+        justify-content center
+
+        > h1
+            text-align center
+
+    .team-sccp
+        color white
+        background-color black
+
+    .team-sep
+        color white
+        background-color #016436
+
+    .team-spfc
+        color white
+        background-color #ed1720
+
+    .team-sfc
+        color black
+        background-color white
+
+    .team-crf
+        color white
+        background-color #c1291c
+
+    .team-crvg
+        color black
+        background-color white
+
+    .team-ffc
+        color white
+        background-color #00603b
+
+    .team-bfr
+        color white
+        background-color black
+
+    .team-cec
+        color white
+        background-color #065aa2
+
+    .team-cam
+        color white
+        background-color black
+
+    .team-gfbpa
+        color white
+        background-color #005ea8
+
+    .team-sci
+        color white
+        background-color #c30411
+
+    #teams
+        display none
+
+    /*
+     * Media specific.
+     */
+
+    @media (orientation: portrait)
+
+        header
+            height 10%
+
+        main
+            height 90%
+
+            > #table-v
+                height 100%
+
+                > tbody
+                    display table
+                    table-layout fixed
+                    height 100%
+                    width 100%
+
+                    > tr
+
+                        > th
+                            font-size .9rem
+                            font-weight normal
+
+                        > td
+                            font-size 1.4rem
+
+            > #table-h
+                display none
+
+    @media (orientation: landscape)
+
+        header > h1
+            margin 2rem
+            font-size 4rem
+
+        main
+
+            > #table-h
+                height 600px
+
+                tr
+                    display table
+                    table-layout fixed
+                    height 200px
+
+                > thead > tr
+                    font-size 1.5rem
+
+                > tbody > tr
+                    font-size 2rem
+
+            > #table-v
+                display none
