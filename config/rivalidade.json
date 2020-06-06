@@ -1,4 +1,5 @@
 {
     "title": "Clássico da Rivalidade",
-    "teams": ["crf", "bfr"]
+    "team1": "crf",
+    "team2": "bfr"
 }

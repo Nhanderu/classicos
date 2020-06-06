@@ -1,4 +1,5 @@
 {
     "title": "Fla-Flu",
-    "teams": ["crf", "ffc"]
+    "team1": "crf",
+    "team2": "ffc"
 }

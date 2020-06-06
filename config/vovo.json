@@ -1,4 +1,5 @@
 {
     "title": "Clássico Vovô",
-    "teams": ["ffc", "bfr"]
+    "team1": "ffc",
+    "team2": "bfr"
 }

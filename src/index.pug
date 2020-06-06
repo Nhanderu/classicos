@@ -19,63 +19,14 @@ html
             h1.title #{title}
 
         table.table-h
-            thead
-                tr
-                    th Mundial
-                    th Recopa
-                    th Libertadores
-                    th Brasileirão
-                    th Copa do Brasil
-                    th Série B
-                    th Paulistão
+            thead: tr
             tbody
-                tr(class=`team-${teams[0]}`)
-                    td 2
-                    td 1
-                    td 1
-                    td 7
-                    td 3
-                    td 1
-                    td 30
-                tr(class=`team-${teams[1]}`)
-                    td 0
-                    td 0
-                    td 1
-                    td 10
-                    td 3
-                    td 2
-                    td 22
 
         table.table-v
             tbody
-                tr
-                    th Mundial
-                    td(class=`team-${teams[0]}`) 2
-                    td(class=`team-${teams[1]}`) 0
-                tr
-                    th Recopa
-                    td(class=`team-${teams[0]}`) 1
-                    td(class=`team-${teams[1]}`) 0
-                tr
-                    th Libertadores
-                    td(class=`team-${teams[0]}`) 1
-                    td(class=`team-${teams[1]}`) 1
-                tr
-                    th Brasileirão
-                    td(class=`team-${teams[0]}`) 7
-                    td(class=`team-${teams[1]}`) 10
-                tr
-                    th Copa do Brasil
-                    td(class=`team-${teams[0]}`) 3
-                    td(class=`team-${teams[1]}`) 3
-                tr
-                    th Série B
-                    td(class=`team-${teams[0]}`) 1
-                    td(class=`team-${teams[1]}`) 2
-                tr
-                    th Paulistão
-                    td(class=`team-${teams[0]}`) 30
-                    td(class=`team-${teams[1]}`) 22
 
-        script(defer, src="https://unpkg.com/axios/dist/axios.min.js")
-        script(inline, defer, src="./index.js")
+        span#teams(data-team-1=`${team1}`, data-team-2=`${team2}`)
+        //- script(defer, src="https://unpkg.com/axios/dist/axios.min.js")
+        //- script(inline, defer, src="./fetch.js")
+        script(inline, defer, src="./tempdata.js")
+        script(inline, defer, src="./display.js")

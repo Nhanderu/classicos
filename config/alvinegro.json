@@ -1,4 +1,5 @@
 {
     "title": "Clássico Alvinegro",
-    "teams": ["sccp", "sfc"]
+    "team1": "sccp",
+    "team2": "sfc"
 }

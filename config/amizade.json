@@ -1,4 +1,5 @@
 {
     "title": "Clássico da Amizade",
-    "teams": ["crvg", "bfr"]
+    "team1": "crvg",
+    "team2": "bfr"
 }

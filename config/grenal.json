@@ -1,4 +1,5 @@
 {
     "title": "Gre-Nal",
-    "teams": ["gfbpa", "sci"]
+    "team1": "gfbpa",
+    "team2": "sci"
 }

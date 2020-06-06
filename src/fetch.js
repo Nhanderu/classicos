@@ -13,7 +13,7 @@ const query = `query Seila {
 }`;
 
 axios.post('https://gorduchinha.herokuapp.com/api/v1/graphql', { query })
-    .then(function (res) { console.log('ok', res); })
-    .catch(function (err) { console.log('error', err); });
+    .then(res => console.log('ok', res))
+    .catch(err => console.log('error', err));
 
 console.log('demora');

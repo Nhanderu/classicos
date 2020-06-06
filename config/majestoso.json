@@ -1,4 +1,5 @@
 {
     "title": "Majestoso",
-    "teams": ["sccp", "spfc"]
+    "team1": "sccp",
+    "team2": "spfc"
 }

@@ -1,4 +1,5 @@
 {
     "title": "Derby Paulista",
-    "teams": ["sccp", "sep"]
+    "team1": "sccp",
+    "team2": "sep"
 }

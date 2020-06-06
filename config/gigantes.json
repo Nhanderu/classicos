@@ -1,4 +1,5 @@
 {
     "title": "Clássico dos Gigantes",
-    "teams": ["crvg", "ffc"]
+    "team1": "crvg",
+    "team2": "ffc"
 }

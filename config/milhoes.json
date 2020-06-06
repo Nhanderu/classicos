@@ -1,4 +1,5 @@
 {
     "title": "Clássico dos Milhões",
-    "teams": ["crf", "crvg"]
+    "team1": "crf",
+    "team2": "crvg"
 }

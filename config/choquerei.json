@@ -1,4 +1,5 @@
 {
     "title": "Choque-Rei",
-    "teams": ["sep", "spfc"]
+    "team1": "sep",
+    "team2": "spfc"
 }
