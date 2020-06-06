@@ -15,61 +15,65 @@ html
 
     body
 
-        h1 #{title}
+        header.title-wrapper
+            h1.title #{title}
 
         table.table-h
-            tr
-                th Mundial
-                th Recopa
-                th Libertadores
-                th Brasileirão
-                th Copa do Brasil
-                th Série B
-                th Paulistão
-            tr(class=`team-${teams[0]}`)
-                td 2
-                td 1
-                td 1
-                td 7
-                td 3
-                td 1
-                td 30
-            tr(class=`team-${teams[1]}`)
-                td 0
-                td 0
-                td 1
-                td 10
-                td 3
-                td 2
-                td 22
+            thead
+                tr
+                    th Mundial
+                    th Recopa
+                    th Libertadores
+                    th Brasileirão
+                    th Copa do Brasil
+                    th Série B
+                    th Paulistão
+            tbody
+                tr(class=`team-${teams[0]}`)
+                    td 2
+                    td 1
+                    td 1
+                    td 7
+                    td 3
+                    td 1
+                    td 30
+                tr(class=`team-${teams[1]}`)
+                    td 0
+                    td 0
+                    td 1
+                    td 10
+                    td 3
+                    td 2
+                    td 22
 
         table.table-v
+            tbody
                 tr
-                    td Mundial
+                    th Mundial
                     td(class=`team-${teams[0]}`) 2
                     td(class=`team-${teams[1]}`) 0
                 tr
-                    td Recopa
+                    th Recopa
                     td(class=`team-${teams[0]}`) 1
                     td(class=`team-${teams[1]}`) 0
                 tr
-                    td Libertadores
+                    th Libertadores
                     td(class=`team-${teams[0]}`) 1
                     td(class=`team-${teams[1]}`) 1
                 tr
-                    td Brasileirão
+                    th Brasileirão
                     td(class=`team-${teams[0]}`) 7
                     td(class=`team-${teams[1]}`) 10
                 tr
-                    td Copa do Brasil
+                    th Copa do Brasil
                     td(class=`team-${teams[0]}`) 3
                     td(class=`team-${teams[1]}`) 3
                 tr
-                    td Série B
+                    th Série B
                     td(class=`team-${teams[0]}`) 1
                     td(class=`team-${teams[1]}`) 2
                 tr
-                    td Paulistão
+                    th Paulistão
                     td(class=`team-${teams[0]}`) 30
                     td(class=`team-${teams[1]}`) 22
 

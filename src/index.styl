@@ -1,4 +1,49 @@
+/*
+ * Mixins.
+ */
+
+full-size()
+    height 100vh
+    width 100vw
+
 @media screen
+
+    /*
+     * Common.
+     */
+
+    *
+        box-sizing border-box
+        margin 0
+        padding 0
+
+    html
+        full-size()
+
+    body
+        full-size()
+        font-family 'Roboto', sans-serif
+
+    table
+        border-spacing 0
+
+    tr
+        width 100vw
+
+    td, th
+        text-align center
+
+    /*
+     * Main.
+     */
+
+    .title-wrapper
+        display flex
+        align-items center
+        justify-content center
+
+        > .title
+            text-align center
 
     .team-sccp
         color white
@@ -48,10 +93,66 @@
         color white
         background-color #c30411
 
+    /*
+     * Media specific.
+     */
+
     @media (orientation: portrait)
+
+        .title-wrapper
+            height 10vh
+            font-size 1.5rem
+
+        .table-v
+            height 90vh
+
+            > tbody
+                display table
+                table-layout fixed
+                height 100%
+                width 100%
+
+                > tr
+
+                    > th
+                        font-size .9rem
+                        font-weight normal
+
+                    > td
+                        font-size 1.4rem
+
         .table-h
             display none
 
     @media (orientation: landscape)
+
+        tr
+            display table
+            table-layout fixed
+
+        .title-wrapper
+            margin 2rem
+
+            > .title
+                font-size 4rem
+
+        .table-h
+            height 600px
+
+            > thead
+                height 34%
+
+                > tr
+                    height 100%
+                    font-size 1.5rem
+
+            > tbody
+                height 66%
+
+                > tr
+                    height 50%
+                    font-size 2rem
+
         .table-v
             display none
+
