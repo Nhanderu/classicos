@@ -119,6 +119,9 @@
             > #table-h
                 display none
 
+        footer
+            display none
+
     @media (orientation: landscape)
 
         header > h1
@@ -143,3 +146,19 @@
 
             > #table-v
                 display none
+
+        footer
+            position absolute
+            bottom 0
+            left 0
+            display flex
+            justify-content space-between
+            width 100vw
+
+            > div
+                margin 20px
+
+            a
+                font-family inherit
+                color black
+                font-weight bold
