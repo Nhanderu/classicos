@@ -11,7 +11,7 @@ const tempdata = {
         'cam',
         'cec',
         'gfbpa',
-        'iec',
+        'sci',
     ],
     champs: {
         'world-cup': {
@@ -28,7 +28,7 @@ const tempdata = {
                 cam: 0,
                 cec: 0,
                 gfbpa: 1,
-                iec: 1,
+                sci: 1,
             },
         },
         'south-american-cup-a': {
@@ -45,7 +45,7 @@ const tempdata = {
                 cam: 1,
                 cec: 2,
                 gfbpa: 3,
-                iec: 2,
+                sci: 2,
             },
         },
         'south-american-cup-b': {
@@ -62,7 +62,7 @@ const tempdata = {
                 cam: 0,
                 cec: 0,
                 gfbpa: 0,
-                iec: 1,
+                sci: 1,
             },
         },
         'south-american-supercup': {
@@ -79,7 +79,7 @@ const tempdata = {
                 cam: 1,
                 cec: 1,
                 gfbpa: 2,
-                iec: 2,
+                sci: 2,
             },
         },
         'national-league-1-div': {
@@ -96,7 +96,7 @@ const tempdata = {
                 cam: 1,
                 cec: 4,
                 gfbpa: 2,
-                iec: 3,
+                sci: 3,
             },
         },
         'national-league-2-div': {
@@ -113,7 +113,7 @@ const tempdata = {
                 cam: 2,
                 cec: 0,
                 gfbpa: 1,
-                iec: 0,
+                sci: 0,
             },
         },
         'national-cup': {
@@ -130,7 +130,7 @@ const tempdata = {
                 cam: 1,
                 cec: 6,
                 gfbpa: 5,
-                iec: 1,
+                sci: 1,
             },
         },
         'national-supercup': {
@@ -147,7 +147,7 @@ const tempdata = {
                 cam: 0,
                 cec: 0,
                 gfbpa: 1,
-                iec: 0,
+                sci: 0,
             },
         },
         'sp-state-cup': {
@@ -164,7 +164,7 @@ const tempdata = {
                 cam: 0,
                 cec: 0,
                 gfbpa: 0,
-                iec: 0,
+                sci: 0,
             },
         },
         'rj-state-cup': {
@@ -181,7 +181,7 @@ const tempdata = {
                 cam: 0,
                 cec: 0,
                 gfbpa: 0,
-                iec: 0,
+                sci: 0,
             },
         },
         'mg-state-cup': {
@@ -198,7 +198,7 @@ const tempdata = {
                 cam: 44,
                 cec: 38,
                 gfbpa: 0,
-                iec: 0,
+                sci: 0,
             },
         },
         'rs-state-cup': {
@@ -215,7 +215,7 @@ const tempdata = {
                 cam: 0,
                 cec: 0,
                 gfbpa: 38,
-                iec: 45,
+                sci: 45,
             },
         },
     },
