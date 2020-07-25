@@ -1,5 +1,6 @@
 const champsNames = {
   'world-cup': 'Mundial',
+  'intercontinental-cup': 'Mundial',
   'south-american-cup-a': 'Libertadores',
   'south-american-cup-b': 'SulAmericana',
   'south-american-supercup': 'Recopa',
