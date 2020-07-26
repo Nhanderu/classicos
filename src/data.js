@@ -1,3 +1,5 @@
+/* global axios */
+
 const champsNames = {
   'world-cup': 'Mundial',
   'intercontinental-cup': 'Mundial',

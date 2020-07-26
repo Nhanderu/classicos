@@ -8,9 +8,9 @@ cp src/*.js build
 
 inline-source --compress --root build build/index.html docs/index.html
 
-pages="${@:-$(ls config | sed s/.json//)}"
+pages="${@:-$(ls static/config | sed s/.json//)}"
 for page in $pages; do
-    pug -O config/$page.json < src/page.pug > build/$page.html
+    pug -O static/config/$page.json < src/page.pug > build/$page.html
     inline-source --compress --root build build/$page.html docs/$page.html
 done
 
