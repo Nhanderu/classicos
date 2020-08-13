@@ -3,12 +3,13 @@
 [![License][badge-1-img]][badge-1-link]
 [![Standard.js][badge-2-img]][badge-2-link]
 
-A website comparing titles on the biggest football derbies on Brazil, running @
-[classicos.info][1]!
+A website comparing titles on the biggest football derbies on Brazil,
+running @ [classicos.info][1]!
 
 ## Build
 
-To build it, simply run `yarn && yarn build`. The output will be on `docs/`.
+To build it, simply run `yarn && yarn build`. The output will be on
+`docs/`.
 
 ## License
 
@@ -16,9 +17,9 @@ This project code is in the public domain. See the [LICENSE file][2].
 
 ### Contribution
 
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you shall be in the public domain, without any
-additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally
+submitted for inclusion in the work by you shall be in the public
+domain, without any additional terms or conditions.
 
 [1]: https://classicos.info
 [2]: ./LICENSE
