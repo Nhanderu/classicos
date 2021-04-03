@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-rm -rf build
+
+set -e
+
+rm -rf build docs/*.html docs/static
 mkdir -p build
 
 pug < src/index.pug > build/index.html
@@ -8,10 +11,11 @@ cp src/*.js build
 
 inline-source --compress --root build build/index.html docs/index.html
 
-pages="${@:-$(ls static/config | sed s/.json//)}"
+pages="${@:-$(ls config | sed s/.json//)}"
 for page in $pages; do
-    pug -O static/config/$page.json < src/page.pug > build/$page.html
+    pug -O config/$page.json < src/page.pug > build/$page.html
     inline-source --compress --root build build/$page.html docs/$page.html
 done
 
+cp -R static docs
 rm -rf build
