@@ -9,31 +9,37 @@ html
         meta(name='description' content='')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
 
+        link(inline, rel='stylesheet', href='common.css')
         link(inline, rel='stylesheet', href='index.css')
-        link(inline, rel='stylesheet', href='util.css')
 
         title Clássicos
 
-    body
+    body: .wrapper
 
         header
             h1.title Clássicos
 
-        main
+        nav
             ul
-                li: a(href='./derbypaulista') Derby Paulista
-                li: a(href='./majestoso') Majestoso
-                li: a(href='./alvinegro') Clássico Alvinegro
-                li: a(href='./choquerei') Choque-Rei
-                li: a(href='./saudade') Clássico da Saudade
-                li: a(href='./sansao') Sansão
-                li: a(href='./milhoes') Clássico dos Milhões
-                li: a(href='./flaflu') Fla-Flu
-                li: a(href='./rivalidade') Clássico da Rivalidade
-                li: a(href='./gigantes') Clássico dos Gigantes
-                li: a(href='./amizade') Clássico da Amizade
-                li: a(href='./vovo') Vovô
-                li: a(href='./mineiro') Clássico Mineiro
-                li: a(href='./grenal') Grenal
+                li: a(href='/derbypaulista') Derby Paulista
+                li: a(href='/majestoso') Majestoso
+                li: a(href='/alvinegro') Clássico Alvinegro
+                li: a(href='/choquerei') Choque-Rei
+                li: a(href='/saudade') Clássico da Saudade
+                li: a(href='/sansao') Sansão
+                li: a(href='/milhoes') Clássico dos Milhões
+                li: a(href='/flaflu') Fla-Flu
+                li: a(href='/rivalidade') Clássico da Rivalidade
+                li: a(href='/gigantes') Clássico dos Gigantes
+                li: a(href='/amizade') Clássico da Amizade
+                li: a(href='/vovo') Vovô
+                li: a(href='/mineiro') Clássico Mineiro
+                li: a(href='/grenal') Grenal
+
+        footer
+            .footer-left
+            .footer-right
+                span='criado por '
+                    a(href="https://nhanderu.com") Rafael Escobar
 
         script(inline, defer, src="chrome-mobile.js")
